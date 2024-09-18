@@ -1,0 +1,120 @@
+# fr.yaml
+# French translations for Byzantium Attack Emulator
+
+# General UI Elements
+window_title: "Émulateur d'Attaque Bizantium avec Visualisation BFT"
+welcome_message: "Bienvenue dans l'Émulateur d'Attaque Bizantium!\n\nCette simulation démontre comment la Tolérance aux Défauts Byzantins (BFT) empêche la compromission du système."
+next_phase_button: "Phase Suivante"
+console_output: "Sortie de la Console :"
+legend: "Légende :"
+phase_progress_format: "Progression de la Phase : %p%"
+configuration_sliders: "Curseurs de Configuration"
+
+# Slider Labels
+detection_threshold_label: "Seuil de Détection : {value}%"
+system_compromise_threshold_label: "Seuil de Compromission du Système : {value}%"
+messages_per_phase_label: "Messages par Phase : {value}"
+simulation_speed_label: "Vitesse de Simulation : {value} ms"
+
+# Input Prompts
+input_nodes_prompt: "Entrez le nombre de nœuds (par défaut 12) :"
+
+# Error Messages
+image_not_found: "Image Introuvable"
+image_not_found_message: "Assurez-vous que les images requises se trouvent dans le répertoire du script.\nManquante : {filename}"
+image_missing_title: "Image Manquante"
+image_missing_message: "Assurez-vous que les images requises se trouvent dans le répertoire du script.\nManquante : {img_path}"
+arrow_image_missing_title: "Image de Flèche Manquante"
+arrow_image_missing_message: "Impossible de créer l'image de flèche temporaire pour la légende."
+
+# Legend Items
+honest_node_legend: "Nœud Honnête"
+malicious_node_legend: "Nœud Malveillant"
+blacklisted_node_legend: "Nœud sur Liste Noire"
+confused_node_legend: "Nœud Confus"
+
+# Message Legends
+honest_message_legend: "Message Honnête"
+malicious_message_legend: "Message Malveillant"
+
+# Phase Information
+phase_info_initial: "Phase Initiale : Tous les nœuds sont loyaux (Bizantium). Le système est stable."
+phase_log_initial: "Phase 1 : Tous les nœuds sont loyaux. Le système est stable."
+phase_info: "Phase {info}"
+phase_node_compromised: "Phase {phase} : Le nœud {node} a été compromis et est maintenant malveillant."
+
+# Simulation Status Messages
+all_nodes_compromised: "Tous les nœuds ont été compromis. Simulation terminée."
+simulation_complete_title: "Simulation Terminée"
+final_state_all_compromised: "État Final : Tous les nœuds ont été compromis.\nConclusion : Lorsque la majorité des nœuds sont défectueux, BFT ne peut pas prévenir l'effondrement du système."
+
+# Compromise Threshold Messages
+system_compromised: "Système compromis : Les nœuds malveillants dépassent le seuil."
+system_compromised_info: "Système compromis : Les nœuds honnêtes sont submergés."
+system_compromised_log: "Système compromis : Les nœuds honnêtes sont submergés."
+system_compromised_message: "Les nœuds malveillants ont dépassé le seuil de compromission du système.\nLe système ne peut plus fonctionner correctement."
+
+# Majority Compromised Messages
+majority_compromised_title: "Majorité Compromise"
+majority_compromised_message: "La majorité des nœuds a été compromise.\nLes mécanismes de Tolérance aux Défauts Byzantins échouent."
+warning_majority: "Attention : Les nœuds malveillants sont en majorité !"
+
+# Critical Stage Messages
+critical_stage_title: "Étape Critique Atteinte"
+critical_stage_message: "Les nœuds malveillants ont pris le contrôle du réseau.\nLes nœuds honnêtes sont submergés et ne peuvent maintenir le consensus."
+critical_stage_explanation: "Étape Critique : Les nœuds malveillants sont maintenant en majorité.\nLe système ne peut plus fonctionner correctement."
+
+# System Collapse Messages
+system_collapse_title: "Effondrement du Système"
+system_collapse_message: "Le système s'est effondré en raison du contrôle malveillant écrasant."
+
+# Honest Nodes Overwhelmed Messages
+honest_overwhelmed_title: "Nœuds Honnêtes Submergés"
+honest_overwhelmed_message: "Les nœuds honnêtes sont submergés par les nœuds malveillants et sont devenus confus.\nIls ne peuvent pas maintenir le consensus."
+honest_overwhelmed_info: "Les nœuds honnêtes sont submergés et confus en raison de la majorité malveillante."
+honest_overwhelmed_log: "Les nœuds honnêtes sont submergés et confus en raison de la majorité malveillante."
+
+# Malicious Node Detection Messages
+malicious_node_detected_title: "Nœud Malveillant Détecté"
+malicious_node_detected_message: "Le nœud {node} a été détecté comme malveillant et isolé du réseau."
+node_detected: "Le nœud {node} a été détecté comme malveillant et isolé."
+
+# Nodes Blacklisted Messages
+nodes_blacklisted: "Les nœuds {nodes} ont été mis sur liste noire par le réseau honnête."
+nodes_blacklisted_title: "Nœuds sur Liste Noire"
+
+# Non-loyal Part Information
+non_loyal_part: "Partie non loyale : {compromised}/{total} ({proportion:.2f})"
+
+# BFT Explanation
+bft_explanation: "La Tolérance aux Défauts Byzantins (BFT) peut gérer jusqu'à (n-1)/3 nœuds défectueux.\nUne fois que le nombre de nœuds malveillants dépasse ce seuil, le système ne peut garantir une opération correcte.\n\nLes nœuds honnêtes peuvent être submergés par des messages conflictuels et incapables d'atteindre un consensus."
+
+# System Status Messages
+stable_system: "Système stable."
+initial_phase_compromise: "Phase initiale de compromission."
+significant_compromised: "Nombre significatif compromis."
+majority_compromised: "Majorité compromise."
+base_ideology_changed: "Idéologie de base totalement changée."
+
+# Stage Explanations
+stage_1_explanation: "Étape 1 : Un attaquant commence à compromettre les nœuds dans le système."
+stage_2_explanation: "Étape 2 : Les compromissions initiales commencent à affaiblir l'intégrité du système."
+stage_3_explanation: "Étape 3 : À mesure que davantage de nœuds sont compromis, la confiance au sein du réseau diminue."
+stage_4_explanation: "Étape 4 : Majorité des nœuds compromis !\nDans un système avec BFT, les mécanismes commencent à échouer."
+final_stage_explanation: "Étape Finale : Presque tous les nœuds sont compromis.\nLe système s'est effondré."
+
+# General Messages
+generals_sending_messages: "Les généraux envoient des messages..."
+
+# Message Types
+attack_at_dawn: "Attaque à l'aube."
+retreat_immediately: "Retraite immédiate."
+send_reinforcements: "Envoyer des renforts."
+
+# Message Verification Messages
+inconsistent_messages_detected: "Récepteur {receiver} : Messages incohérents détectés."
+
+# Additional Keys Added for Internationalization
+graph_title: "Simulation d'Attaque Bizantium avec BFT"
+updated_bft_threshold: "Seuil BFT mis à jour basé sur les nœuds actifs ({active_nodes}) : {threshold}"
+no_active_nodes_threshold: "Aucun nœud actif restant. Le seuil BFT est fixé à 0."

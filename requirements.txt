@@ -1,0 +1,6 @@
+pyqt5>=5.15.0
+networkx>=2.8
+matplotlib>=3.5.0
+pillow>=9.0.0
+numpy>=1.21.0
+pyyaml>=6.0

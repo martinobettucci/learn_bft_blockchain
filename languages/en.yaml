@@ -1,0 +1,120 @@
+# en.yaml
+# English translations for Byzantium Attack Emulator
+
+# General UI Elements
+window_title: "Byzantium Attack Emulator with BFT Visualization"
+welcome_message: "Welcome to the Byzantium Attack Emulator!\n\nThis simulation demonstrates how Byzantine Fault Tolerance (BFT) prevents system compromise."
+next_phase_button: "Next Phase"
+console_output: "Console Output:"
+legend: "Legend:"
+phase_progress_format: "Phase Progress: %p%"
+configuration_sliders: "Configuration Sliders"
+
+# Slider Labels
+detection_threshold_label: "Detection Threshold: {value}%"
+system_compromise_threshold_label: "System Compromise Threshold: {value}%"
+messages_per_phase_label: "Messages per Phase: {value}"
+simulation_speed_label: "Simulation Speed: {value} ms"
+
+# Input Prompts
+input_nodes_prompt: "Enter the number of nodes (default is 12):"
+
+# Error Messages
+image_not_found: "Image Not Found"
+image_not_found_message: "Ensure the required images are in the script directory.\nMissing: {filename}"
+image_missing_title: "Image Missing"
+image_missing_message: "Ensure the required images are in the script directory.\nMissing: {img_path}"
+arrow_image_missing_title: "Arrow Image Missing"
+arrow_image_missing_message: "Failed to create temporary arrow image for legend."
+
+# Legend Items
+honest_node_legend: "Honest Node"
+malicious_node_legend: "Malicious Node"
+blacklisted_node_legend: "Blacklisted Node"
+confused_node_legend: "Confused Node"
+
+# Message Legends
+honest_message_legend: "Honest Message"
+malicious_message_legend: "Malicious Message"
+
+# Phase Information
+phase_info_initial: "Initial Phase: All nodes are loyal (Byzantium). The system is stable."
+phase_log_initial: "Phase 1: All nodes are loyal. The system is stable."
+phase_info: "Phase {info}"
+phase_node_compromised: "Phase {phase}: Node {node} has been compromised and is now malicious."
+
+# Simulation Status Messages
+all_nodes_compromised: "All nodes have been compromised. Simulation complete."
+simulation_complete_title: "Simulation Complete"
+final_state_all_compromised: "Final State: All nodes have been compromised.\nConclusion: When the majority of nodes are faulty, BFT cannot prevent system collapse."
+
+# Compromise Threshold Messages
+system_compromised: "System compromised: Malicious nodes exceed the threshold."
+system_compromised_info: "System compromised: Honest nodes are overwhelmed."
+system_compromised_log: "System compromised: Honest nodes are overwhelmed."
+system_compromised_message: "Malicious nodes have exceeded the system compromise threshold.\nThe system can no longer function correctly."
+
+# Majority Compromised Messages
+majority_compromised_title: "Majority Compromised"
+majority_compromised_message: "A majority of nodes have been compromised.\nByzantine Fault Tolerance mechanisms are failing."
+warning_majority: "Warning: Malicious nodes are in the majority!"
+
+# Critical Stage Messages
+critical_stage_title: "Critical Stage Reached"
+critical_stage_message: "Malicious nodes have taken over the network.\nHonest nodes are overwhelmed and cannot maintain consensus."
+critical_stage_explanation: "Critical Stage: Malicious nodes are now in the majority.\nThe system can no longer function correctly."
+
+# System Collapse Messages
+system_collapse_title: "System Collapse"
+system_collapse_message: "The system has collapsed due to overwhelming malicious control."
+
+# Honest Nodes Overwhelmed Messages
+honest_overwhelmed_title: "Honest Nodes Overwhelmed"
+honest_overwhelmed_message: "Honest nodes are overwhelmed by malicious nodes and have become confused.\nThey are unable to maintain consensus."
+honest_overwhelmed_info: "Honest nodes are overwhelmed and confused due to the malicious majority."
+honest_overwhelmed_log: "Honest nodes are overwhelmed and confused due to the malicious majority."
+
+# Malicious Node Detection Messages
+malicious_node_detected_title: "Malicious Node Detected"
+malicious_node_detected_message: "Node {node} has been detected as malicious and isolated from the network."
+node_detected: "Node {node} has been detected as malicious and isolated."
+
+# Nodes Blacklisted Messages
+nodes_blacklisted: "Nodes {nodes} have been blacklisted by the honest network."
+nodes_blacklisted_title: "Nodes Blacklisted"
+
+# Non-loyal Part Information
+non_loyal_part: "Non-loyal part: {compromised}/{total} ({proportion:.2f})"
+
+# BFT Explanation
+bft_explanation: "Byzantine Fault Tolerance (BFT) can handle up to (n-1)/3 faulty nodes.\nOnce the number of malicious nodes exceeds this threshold, the system cannot guarantee correct operation.\n\nHonest nodes may become overwhelmed by conflicting messages and unable to reach consensus."
+
+# System Status Messages
+stable_system: "Stable system."
+initial_phase_compromise: "Initial phase of compromise."
+significant_compromised: "Significant number compromised."
+majority_compromised: "Majority compromised."
+base_ideology_changed: "Base ideology totally changed."
+
+# Stage Explanations
+stage_1_explanation: "Stage 1: An attacker starts compromising nodes in the system."
+stage_2_explanation: "Stage 2: Initial compromises begin to weaken the system's integrity."
+stage_3_explanation: "Stage 3: As more nodes are compromised, trust within the network decreases."
+stage_4_explanation: "Stage 4: Majority of nodes compromised!\nIn a system with BFT, mechanisms start to fail."
+final_stage_explanation: "Final Stage: Almost all nodes are compromised.\nThe system has collapsed."
+
+# General Messages
+generals_sending_messages: "Generals are sending messages..."
+
+# Message Types
+attack_at_dawn: "Attack at dawn."
+retreat_immediately: "Retreat immediately."
+send_reinforcements: "Send reinforcements."
+
+# Message Verification Messages
+inconsistent_messages_detected: "Receiver {receiver}: Inconsistent messages detected."
+
+# Additional Keys Added for Internationalization
+graph_title: "Byzantium Attack Simulation with BFT"
+updated_bft_threshold: "Updated BFT Threshold based on active nodes ({active_nodes}): {threshold}"
+no_active_nodes_threshold: "No active nodes remaining. BFT Threshold set to 0."

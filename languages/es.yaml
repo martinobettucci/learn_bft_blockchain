@@ -1,0 +1,120 @@
+# es.yaml
+# Spanish translations for Byzantium Attack Emulator
+
+# General UI Elements
+window_title: "Emulador de Ataque Bizantium con Visualización BFT"
+welcome_message: "¡Bienvenido al Emulador de Ataque Bizantium!\n\nEsta simulación demuestra cómo la Tolerancia a Fallos Bizantinos (BFT) previene la compromisión del sistema."
+next_phase_button: "Siguiente Fase"
+console_output: "Salida de Consola:"
+legend: "Leyenda:"
+phase_progress_format: "Progreso de Fase: %p%"
+configuration_sliders: "Deslizadores de Configuración"
+
+# Slider Labels
+detection_threshold_label: "Umbral de Detección: {value}%"
+system_compromise_threshold_label: "Umbral de Compromiso del Sistema: {value}%"
+messages_per_phase_label: "Mensajes por Fase: {value}"
+simulation_speed_label: "Velocidad de Simulación: {value} ms"
+
+# Input Prompts
+input_nodes_prompt: "Ingrese el número de nodos (el valor predeterminado es 12):"
+
+# Error Messages
+image_not_found: "Imagen No Encontrada"
+image_not_found_message: "Asegúrese de que las imágenes requeridas estén en el directorio del script.\nFaltante: {filename}"
+image_missing_title: "Imagen Faltante"
+image_missing_message: "Asegúrese de que las imágenes requeridas estén en el directorio del script.\nFaltante: {img_path}"
+arrow_image_missing_title: "Imagen de Flecha Faltante"
+arrow_image_missing_message: "No se pudo crear la imagen de flecha temporal para la leyenda."
+
+# Legend Items
+honest_node_legend: "Nodo Honesto"
+malicious_node_legend: "Nodo Malicioso"
+blacklisted_node_legend: "Nodo en Lista Negra"
+confused_node_legend: "Nodo Confundido"
+
+# Message Legends
+honest_message_legend: "Mensaje Honesto"
+malicious_message_legend: "Mensaje Malicioso"
+
+# Phase Information
+phase_info_initial: "Fase Inicial: Todos los nodos son leales (Bizantium). El sistema es estable."
+phase_log_initial: "Fase 1: Todos los nodos son leales. El sistema es estable."
+phase_info: "Fase {info}"
+phase_node_compromised: "Fase {phase}: El nodo {node} ha sido comprometido y ahora es malicioso."
+
+# Simulation Status Messages
+all_nodes_compromised: "Todos los nodos han sido comprometidos. Simulación completa."
+simulation_complete_title: "Simulación Completa"
+final_state_all_compromised: "Estado Final: Todos los nodos han sido comprometidos.\nConclusión: Cuando la mayoría de los nodos son defectuosos, BFT no puede prevenir el colapso del sistema."
+
+# Compromise Threshold Messages
+system_compromised: "Sistema comprometido: Los nodos maliciosos exceden el umbral."
+system_compromised_info: "Sistema comprometido: Los nodos honestos están abrumados."
+system_compromised_log: "Sistema comprometido: Los nodos honestos están abrumados."
+system_compromised_message: "Los nodos maliciosos han superado el umbral de compromisión del sistema.\nEl sistema ya no puede funcionar correctamente."
+
+# Majority Compromised Messages
+majority_compromised_title: "Mayoría Comprometida"
+majority_compromised_message: "La mayoría de los nodos ha sido comprometida.\nLos mecanismos de Tolerancia a Fallos Bizantinos están fallando."
+warning_majority: "¡Advertencia: Los nodos maliciosos están en la mayoría!"
+
+# Critical Stage Messages
+critical_stage_title: "Etapa Crítica Alcanzada"
+critical_stage_message: "Los nodos maliciosos han tomado el control de la red.\nLos nodos honestos están abrumados y no pueden mantener el consenso."
+critical_stage_explanation: "Etapa Crítica: Los nodos maliciosos están ahora en la mayoría.\nEl sistema ya no puede funcionar correctamente."
+
+# System Collapse Messages
+system_collapse_title: "Colapso del Sistema"
+system_collapse_message: "El sistema ha colapsado debido al control malicioso abrumador."
+
+# Honest Nodes Overwhelmed Messages
+honest_overwhelmed_title: "Nodos Honestos Abrumados"
+honest_overwhelmed_message: "Los nodos honestos están abrumados por los nodos maliciosos y se han confundido.\nNo pueden mantener el consenso."
+honest_overwhelmed_info: "Los nodos honestos están abrumados y confundidos debido a la mayoría maliciosa."
+honest_overwhelmed_log: "Los nodos honestos están abrumados y confundidos debido a la mayoría maliciosa."
+
+# Malicious Node Detection Messages
+malicious_node_detected_title: "Nodo Malicioso Detectado"
+malicious_node_detected_message: "El nodo {node} ha sido detectado como malicioso y aislado de la red."
+node_detected: "El nodo {node} ha sido detectado como malicioso y aislado."
+
+# Nodes Blacklisted Messages
+nodes_blacklisted: "Los nodos {nodes} han sido puestos en la lista negra por la red honesta."
+nodes_blacklisted_title: "Nodos en Lista Negra"
+
+# Non-loyal Part Information
+non_loyal_part: "Parte no leal: {compromised}/{total} ({proportion:.2f})"
+
+# BFT Explanation
+bft_explanation: "La Tolerancia a Fallos Bizantinos (BFT) puede manejar hasta (n-1)/3 nodos defectuosos.\nUna vez que el número de nodos maliciosos excede este umbral, el sistema no puede garantizar una operación correcta.\n\nLos nodos honestos pueden verse abrumados por mensajes conflictivos y no ser capaces de alcanzar un consenso."
+
+# System Status Messages
+stable_system: "Sistema estable."
+initial_phase_compromise: "Fase inicial de compromisión."
+significant_compromised: "Número significativo comprometido."
+majority_compromised: "Mayoría comprometida."
+base_ideology_changed: "Ideología base totalmente cambiada."
+
+# Stage Explanations
+stage_1_explanation: "Etapa 1: Un atacante comienza a comprometer los nodos en el sistema."
+stage_2_explanation: "Etapa 2: Los compromisos iniciales comienzan a debilitar la integridad del sistema."
+stage_3_explanation: "Etapa 3: A medida que más nodos son comprometidos, la confianza dentro de la red disminuye."
+stage_4_explanation: "Etapa 4: ¡Mayoría de nodos comprometidos!\nEn un sistema con BFT, los mecanismos comienzan a fallar."
+final_stage_explanation: "Etapa Final: Casi todos los nodos están comprometidos.\nEl sistema ha colapsado."
+
+# General Messages
+generals_sending_messages: "Los generales están enviando mensajes..."
+
+# Message Types
+attack_at_dawn: "Ataque al amanecer."
+retreat_immediately: "Retirada inmediata."
+send_reinforcements: "Enviar refuerzos."
+
+# Message Verification Messages
+inconsistent_messages_detected: "Receptor {receiver}: Mensajes inconsistentes detectados."
+
+# Additional Keys Added for Internationalization
+graph_title: "Simulación de Ataque Bizantium con BFT"
+updated_bft_threshold: "Señal BFT actualizada basada en nodos activos ({active_nodes}): {threshold}"
+no_active_nodes_threshold: "No quedan nodos activos. El umbral BFT se ha establecido en 0."
