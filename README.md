@@ -37,14 +37,7 @@ Welcome to the **Byzantium Attack Emulator**! This application simulates Byzanti
 
 ## Video Demo
 
-<div align="center">
-  <video width="640" height="480" controls>
-    <source src="SimBFT.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
-*Note: To view the video directly on GitHub, ensure that `SimBFT.mp4` is committed to the repository.*
+https://github.com/user-attachments/assets/41e75e72-3bf8-46fe-be49-64afbd27a469
 
 ## Installation
 
